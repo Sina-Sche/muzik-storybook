@@ -3,4 +3,4 @@ import title from "./title.html";
 
 export default { title: "Components/title" };
 
-export const dog = () => title;
+export const main = () => title;

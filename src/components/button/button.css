@@ -1,62 +1,27 @@
 .btn {
+  font-family: "Arial", sans-serif;
   border-radius: 20px;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.5rem;
-  text-align: center;
   color: rgb(248, 238, 238);
   font-weight: lighter;
   border: none;
-  padding: 5px 29px;
-  display: inline-block;
-  flex-direction: row;
-  vertical-align: center;
-  line-height: 20px;
-  letter-spacing: 1px;
+  padding: 8px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn > :first-child {
+  margin-right: 10px;
 }
 .btn-primary {
   background: linear-gradient(to bottom, #eb8175, #d9519d);
 }
 
 .btn-secondary {
-  border-radius: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  text-align: center;
-  color: rgb(248, 238, 238);
-  font-weight: lighter;
-  background: #383b49;
-  border: 2px solid rgb(255, 255, 255);
-  padding: 5px 29px;
-  display: inline-block;
-  flex-direction: row;
-  vertical-align: center;
-  line-height: 20px;
-  letter-spacing: 1px;
-}
-
-.btn-tertiary {
-  border-radius: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  text-align: center;
-  color: rgb(248, 238, 238);
-  font-weight: lighter;
   background: #383b49;
   border: 1.5px solid rgb(255, 255, 255);
-  padding: 5px 29px;
-  display: inline-block;
-  flex-direction: row;
-  vertical-align: center;
-  line-height: 20px;
-  letter-spacing: 1px;
-  margin-bottom: 5px;
 }
-.btn-favorite > div > img {
-  width: 16px;
-  height: 20px;
-  top: 5px;
-  bottom: 8px;
-  margin-right: 10px;
-  line-height: 15px;
-  position: relative;
+.btn-tertiary {
+  background: #383b49;
+  border: 1.5px solid rgb(255, 255, 255);
 }

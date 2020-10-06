@@ -1,35 +1,22 @@
 .btn {
   border-radius: 20px;
-  font-size: 1.2rem;
-  color: white;
-  background: #016b6b;
-  border: none;
-  padding: 10px 20px;
-  display: flex;
-}
-
-.btn-logo {
-  border-radius: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  text-align: center;
   color: rgb(248, 238, 238);
+  font-size: 0.5 rem;
   font-weight: lighter;
-  background: linear-gradient(to bottom, #eb8175, #d9519d);
   border: none;
-  padding: 5px 29px;
-  display: inline-block;
-  flex-direction: row;
-  vertical-align: center;
-  line-height: 20px;
+  padding: 8px 20px;
+  display: flex;
+  align-items: center;
+  min-width: 125px;
+  justify-content: center;
   letter-spacing: 1px;
 }
-.btn-logo > div > img {
+.btn-primary {
+  background: linear-gradient(to bottom, #eb8175, #d9519d);
+}
+.btn-primary > img {
   width: 16px;
   height: 20px;
-  top: 5px;
-  bottom: 8px;
   margin-right: 10px;
   line-height: 15px;
-  position: relative;
 }

@@ -1,0 +1,18 @@
+.bottomnav {
+  border-top: 1px solid black;
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  left: 0;
+  right: 0;
+  display: grid;
+  justify-content: center;
+  color: #63666e;
+  margin: 10px 5px;
+}
+.bottomnav > img {
+  margin-right: 10px;
+}
+.bottomnav > p {
+  color: #cb4c95;
+}

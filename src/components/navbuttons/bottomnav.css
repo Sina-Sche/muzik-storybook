@@ -8,18 +8,20 @@
   left: 0;
   right: 0;
   display: flex;
+  background: #151827;
   color: #63666e;
   justify-content: center;
   align-items: center;
   font-size: 0.8rem;
 }
-
 .navitem {
   margin-right: 95px;
   text-align: center;
   justify-content: center;
 }
-
+.img {
+  margin-bottom: 5px;
+}
 .active {
   color: #cb4c9b;
 }

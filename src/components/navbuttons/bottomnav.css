@@ -1,18 +1,25 @@
 .bottomnav {
   border-top: 1px solid black;
-  position: fixed;
+  box-shadow: -5px -5px 10px black;
   bottom: 0;
+  position: fixed;
   height: 50px;
+  width: 100%;
   left: 0;
   right: 0;
-  display: grid;
-  justify-content: center;
+  display: flex;
   color: #63666e;
-  margin: 10px 5px;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
 }
-.bottomnav > img {
-  margin-right: 10px;
+
+.navitem {
+  margin-right: 95px;
+  text-align: center;
+  justify-content: center;
 }
-.bottomnav > p {
-  color: #cb4c95;
+
+.active {
+  color: #cb4c9b;
 }

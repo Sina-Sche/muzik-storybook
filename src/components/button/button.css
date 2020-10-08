@@ -1,8 +1,7 @@
 .btn {
-  font-family: "Arial", sans-serif;
+  color: var(--main-font-color);
   border-radius: 20px;
   font-size: 0.5rem;
-  color: rgb(248, 238, 238);
   font-weight: lighter;
   border: none;
   padding: 8px 20px;
@@ -18,10 +17,10 @@
 }
 
 .btn-secondary {
-  background: #383b49;
+  background-color: var(--main-background-color);
   border: 1.5px solid rgb(255, 255, 255);
 }
 .btn-tertiary {
-  background: #383b49;
+  background: var(--main-background);
   border: 1.5px solid rgb(255, 255, 255);
 }

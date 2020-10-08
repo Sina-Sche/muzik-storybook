@@ -1,4 +1,23 @@
 .app-layout {
   height: 100vh;
-  display: inline-table;
+  display: grid;
+  grid-template: auto 1fr auto;
+}
+.header {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main {
+  display: grid;
+}
+ul {
+  list-style: none;
+}
+hr {
+  height: 1px;
+  background-color: #282b3b;
+  border: none;
+  margin-left: 45px;
 }

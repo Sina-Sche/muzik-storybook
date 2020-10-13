@@ -39,6 +39,7 @@ margin-bottom: 0;
     background-color:  #181b2c;
     border: none;
     grid-column: 3;
+    cursor: pointer;
 }
 .play__element {
     background-color: #181b2c;

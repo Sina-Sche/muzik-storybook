@@ -34,10 +34,19 @@ export function createTrackElement(track) {
     trackElement.append(imgElement,trackDescription,buttonElement)
     buttonElement.append(playActionElement)
     trackDescription.append(titleElement, artistElement)
-    buttonElement.onclick = function() {
-      audioElement.play();
-    };
+    
+   
+    let count = 0;
+    buttonElement.onclick = playPause; 
+    function playPause () {
+      if(count == 0) {
+        count = 1;
+        audioElement.play ();
+            }else {
+              count = 0;
+              audioElement.pause ();
+            }
+          };  
+    
     return trackElement;
-
-
   }

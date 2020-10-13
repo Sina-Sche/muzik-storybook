@@ -1,5 +1,4 @@
 import { createTrackElement } from "./track";
-import playActionSrc from "../../assets/playaction.svg";
 import michaelJacksonSrc from "../../assets/michael.png";
 
 

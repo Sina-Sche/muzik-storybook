@@ -1,0 +1,11 @@
+.setting {
+  display: flex;
+  background: #181b2c;
+}
+.setting :first-child {
+  margin-right: 15.4px;
+  margin-left: 10px;
+}
+.setting :last-child {
+  margin-right: 80px;
+}

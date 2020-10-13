@@ -4,8 +4,10 @@ import volume from "./volume.html";
 import headset from "./headset.html";
 import lockscreen from "./lockscreen.html";
 
-export default { title: "Components/Settings" };
-
+export default {
+  title: "Components/Settings",
+  parameters: { layout: "centered" },
+};
 export const Display = () => display;
 export const Volume = () => volume;
 export const Headset = () => headset;

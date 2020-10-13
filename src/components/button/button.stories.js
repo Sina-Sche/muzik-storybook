@@ -3,7 +3,10 @@ import Primary from "./button-primary.html";
 import Secondary from "./button-secondary.html";
 import Tertiary from "./button-tertiary.html";
 
-export default { title: "Components/Button" };
+export default {
+  title: "Components/Button",
+  parameters: { layout: "centered" },
+};
 
 export const withPlay = () => Primary;
 export const withShare = () => Secondary;

@@ -1,43 +1,44 @@
 .track {
     display: grid;
     grid-template-columns: auto auto auto;
-  }
+    min-width: 300px;
+    border-bottom: 1px solid var(--footnote-font-color);
+}
+
+.track > :not(last-child){
+    margin-right: 30px;
+}
 .track__image {
     height: 50px;
     grid-column: 1;
-    margin-right: 30px;
+    border-bottom: none;
 }
-.titleDescription {
-display: grid;
-grid-template-rows: 2;
-margin-right: 150px;
-border-bottom: 1px solid #525461;
-width: 100%;
+.track__description {
+    display: grid;
+    grid-template-rows: 2;
+    width: 100%;
 }
 
 .titleName {
-font-size: 13px;
+font-size: 0.8125rem;
 font-weight: 700;
 grid-row: 1;
+color: var(--title-font-color);
 margin-bottom: 0;
-color: #9c9DA5;
 
 }
 .artistName {
-    font-size: 10px;
+    font-size: 0.625rem;
     font-weight: 400;
     grid-row:2;
     margin-top: 5px;
-    color: #9c9DA5;
+    color: var(--footnote-font-color);
     margin-bottom: 15px;
-
-
 }
 .action__button {
     background-color:  #181b2c;
     border: none;
     grid-column: 3;
-    grid-area: "action";
 }
 .play__element {
     background-color: #181b2c;

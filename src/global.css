@@ -1,8 +1,10 @@
 @import url("./assets/fonts/circular-std.css");
 :root {
   --main-background-color: #181b2c;
-  --secondary-background-color: #383b49;
+  --secondary-background-color: hsl(229, 13%, 25%);
   --main-font-color: #d7d8db;
+  --title-font-color: #9c9DA5; 
+  --footnote-font-color: #585A67;
 }
 *,
 *::after,

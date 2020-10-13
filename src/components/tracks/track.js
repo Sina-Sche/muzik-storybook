@@ -1,28 +1,25 @@
 import "./track.css";
 import playActionSrc from "../../assets/playaction.svg";
 import michaelJacksonSrc from "../../assets/michael.png";
-export function createTrackElement(title, artist) {
-        const trackElement = document.createElement("div"); 
+export function createTrackElement(track) {
+    const trackElement = document.createElement("div"); 
     trackElement.className = "track";
 
-    const divElement = document.createElement ("div");
-    divElement.className = "titleDescription";
-   
-    
-
-    
-    const titleElement = document.createElement("h3"); // <h3></h3>
-    titleElement.innerText = title; // <h3>Billie Jean</h3>
+    const trackDescription = document.createElement ("div");
+    trackDescription.className = "track__description";
+      
+    const titleElement = document.createElement("h3"); 
+    titleElement.innerText = track.title; 
     titleElement.className = "titleName";
 
     const artistElement = document.createElement("p");
-    artistElement.innerText = artist; 
+    artistElement.innerText = track.artist; 
     artistElement.className = "artistName"; 
 
 
     const imgElement = document.createElement ("img");
     imgElement.src = michaelJacksonSrc;
-    imgElement.alt = `Image of ${artist}`;
+    imgElement.alt = `Image of ${track.artist}`;
     imgElement.className ="track__image";
 
     const buttonElement = document.createElement ("button");
@@ -32,21 +29,15 @@ export function createTrackElement(title, artist) {
     playActionElement.className = "play__element"
     playActionElement.src = playActionSrc;
 
-    trackElement.append(imgElement,divElement,buttonElement)
+    const audioElement =new Audio(track.audioSrc);
+
+    trackElement.append(imgElement,trackDescription,buttonElement)
     buttonElement.append(playActionElement)
-    divElement.append(titleElement, artistElement)
+    trackDescription.append(titleElement, artistElement)
     buttonElement.onclick = function() {
-      alert('Click!');
+      audioElement.play();
     };
     return trackElement;
 
 
   }
-{/* <div class="track">
-  <img/>
-  <div>
-<h3>Billie Jean</h3>
-<p>Michael Jackson</p></div>
-<button></button>
-
-</div> */}

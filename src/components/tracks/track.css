@@ -1,0 +1,45 @@
+.track {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+.track__image {
+    height: 50px;
+    grid-column: 1;
+    margin-right: 30px;
+}
+.titleDescription {
+display: grid;
+grid-template-rows: 2;
+margin-right: 150px;
+border-bottom: 1px solid #525461;
+width: 100%;
+}
+
+.titleName {
+font-size: 13px;
+font-weight: 700;
+grid-row: 1;
+margin-bottom: 0;
+color: #9c9DA5;
+
+}
+.artistName {
+    font-size: 10px;
+    font-weight: 400;
+    grid-row:2;
+    margin-top: 5px;
+    color: #9c9DA5;
+    margin-bottom: 15px;
+
+
+}
+.action__button {
+    background-color:  #181b2c;
+    border: none;
+    grid-column: 3;
+    grid-area: "action";
+}
+.play__element {
+    background-color: #181b2c;
+    padding: 0;
+}

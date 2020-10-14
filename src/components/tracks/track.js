@@ -1,6 +1,7 @@
 import "./track.css";
 import playActionSrc from "../../assets/playaction.svg";
 import pauseActionSrc from "../../assets/pause.svg"
+
 export function createTrackElement(track) {
     const trackElement = document.createElement("div"); 
     trackElement.className = "track";
@@ -35,10 +36,9 @@ export function createTrackElement(track) {
 
      
    const audioElement = new Audio(track.audioSrc);
-   let isPlaying = false;
  
    buttonElement.onclick = function () {   
-   if (isPlaying) {
+   if (!audioElement.paused) {
      audioElement.pause();
      showPlayIcon(playActionElement);    
   }
@@ -46,7 +46,6 @@ export function createTrackElement(track) {
       audioElement.play();
       showPauseIcon(playActionElement);
     }
-      isPlaying = !isPlaying;
    };
   
   

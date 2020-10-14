@@ -1,7 +1,6 @@
 import "./track.css";
 import playActionSrc from "../../assets/playaction.svg";
 import pauseActionSrc from "../../assets/pause.svg"
-import michaelJacksonSrc from "../../assets/michael.png";
 export function createTrackElement(track) {
     const trackElement = document.createElement("div"); 
     trackElement.className = "track";
@@ -29,33 +28,38 @@ export function createTrackElement(track) {
     const playActionElement = document.createElement ("img");   
     playActionElement.className = "play__element";
     playActionElement.src = playActionSrc;
-   
-
+     
     trackElement.append(imgElement,trackDescription,buttonElement);
     trackDescription.append(titleElement, artistElement);
-   buttonElement.append(playActionElement);
-    
-   let isPlaying = false
-   const audioElement =new Audio(track.audioSrc);
+    buttonElement.append(playActionElement);
+
+     
+   const audioElement = new Audio(track.audioSrc);
+   let isPlaying = false;
  
-   buttonElement.onclick = function (){
-   
+   buttonElement.onclick = function () {   
    if (isPlaying) {
-     audioElement.pause ();
-     playActionElement.src = playActionSrc;     
-     playActionElement.alt = "Play Button";
+     audioElement.pause();
+     showPlayIcon(playActionElement);    
   }
     else {
-      audioElement.play ();
-      playActionElement.src = pauseActionSrc;  
-      playActionElement.alt = "Pause Button";
-      }
+      audioElement.play();
+      showPauseIcon(playActionElement);
+    }
       isPlaying = !isPlaying;
-  };
+   };
+  
   
     return trackElement;
   }
-
+  const showPlayIcon = (element) => {
+    element.src = playActionSrc;    
+    element.alt = "Play Icon";
+  };
+  const showPauseIcon = (element) => {
+    element.src = pauseActionSrc;
+    element.alt = "Pause Icon";
+  };
 
 
 

@@ -5,7 +5,7 @@
     margin-top: 10px;
     border-bottom: 1px solid var(--footnote-font-color);
  }
-.track > :not(last-child){
+.track > :not(:last-child){
     margin-right: 30px; 
 
  }
@@ -21,7 +21,7 @@
     margin-left: 20px;
 }
 
-.titleName {
+.track__description > h3 {
 font-size: 0.8125rem;
 font-weight: 700;
 grid-row: 1;
@@ -29,7 +29,7 @@ color: var(--title-font-color);
 margin-bottom: 0;
 
 }
-.artistName {
+.track__description > p {
     font-size: 0.625rem;
     font-weight: 400;
     grid-row:2;
@@ -37,13 +37,9 @@ margin-bottom: 0;
     color: var(--footnote-font-color);
     margin-bottom: 15px;
 }
-.action__button {
+.track__button {
     background-color: var(--main-background-color);
     border: none;
     grid-column: 3;
     cursor: pointer;
-}
-.play__element {
-    background-color: #181b2c;
-    padding: 0;
 }

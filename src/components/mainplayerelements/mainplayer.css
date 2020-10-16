@@ -1,0 +1,12 @@
+.IconList {
+  display: flex;
+  min-width: 252px;
+  justify-content: space-between;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: white;
+}

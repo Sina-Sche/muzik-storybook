@@ -37,6 +37,9 @@
     "stylelint-config-standard": "^20.0.0"
   },
   "dependencies": {
-    "immer": "^8.0.1"
+    "highlight.js": "^10.6.0",
+    "immer": "^8.0.1",
+    "ini": "^2.0.0",
+    "prismjs": "^1.23.0"
   }
 }
